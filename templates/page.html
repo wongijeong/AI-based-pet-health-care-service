@@ -1,0 +1,21 @@
+{% extends 'layouts/default.html' %}
+    {% if current_user.is_authenticated == False %}
+		<p> 로그인이 필요합니다. </p>
+        <h3><a href = "{{ url_for('login') }}"> 로그인</a></h3>
+    {% endif %}
+{% block title %}
+{{ page_title[id] }} - {{ site_title }}
+{% endblock title %}
+
+{% block head -%}
+{{ super() }}
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/'~id~'.css') }}">
+{%- endblock %}
+
+{% block header -%}
+{% include 'layouts/header-page.html' %}
+{% endblock header %}
+
+{% block content -%}
+{% include 'contents/'~id~'.html' %}
+{% endblock content %}

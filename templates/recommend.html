@@ -1,0 +1,16 @@
+{% extends 'layouts/default.html' %}
+
+{% block head -%}
+{{ super() }}
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/recommend.css') }}">
+{%- endblock %}
+
+{% block header -%}
+{% include 'layouts/header-page.html' %}
+{% endblock header %}
+
+{% block content -%}
+{% include 'contents/recommend.html' %}
+{% endblock content %}
+
+

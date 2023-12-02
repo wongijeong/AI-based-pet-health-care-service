@@ -1,0 +1,26 @@
+<div class="register-container">
+  <form class="register-form" action="" method="post">
+    <p><label>E-mail <br>
+		{{ form.hidden_tag() }}
+		{{ form.email(class="login-input") }}
+    <!--<input class=register-input" name = "e-mail" type="text"></label></p>--> 
+    <p><label>아이디 <br>
+		{{ form.hidden_tag() }}
+		{{ form.id(class="login-input") }}
+	<p><label>사용자 별명 <br>
+		{{ form.hidden_tag() }}
+		{{ form.name(class="login-input") }}
+    <p><label>비밀번호<br>
+		{{ form.hidden_tag() }}
+		{{ form.password(class="login-input") }}
+    <p><label>비밀번호 재확인<br>
+		{{ form.hidden_tag() }}
+		{{ form.pwd_confirm(class="login-input") }}
+    <p class="register-submit-container"><label> 
+		{{ form.submit(class="register-submit") }}
+     <!--    <button class="register-submit" type="submit">회원가입</button> -->
+    </p>
+  </form>
+<!--<p> 유저id로 세션유지확인 : {{ name }} </p>-->
+
+</div>

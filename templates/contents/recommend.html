@@ -1,0 +1,54 @@
+<div class="recommend-most recommend-item-container">
+  <a href="#" class="recommend-link">
+    <span class="sr-only"></span>
+  </a>
+  <div class="recommend-most-image-container">
+    <img src="{{ url_for('static', filename='media/다시초롱파우더.jpg') }}" alt="" class="recommend-most-image" width="200" height="200">
+  </div>
+  <div class="recommend-most-descbox">
+    <p class="recommend-most-title">{{items[0].item_name}}</p>
+    <p class="recommend-most-price recommend-price">{{items[0].price}}원</p>
+    <p class="recommend-most-description recommend-description">{{items[0].description}}</p>
+  </div>
+</div>
+<ul class="recommend-list">
+  <li class="recommend-item">
+    <div class="recommend-item-container">
+      <a href="#" class="recommend-link">
+        <span class="sr-only">{{ items[1].title }}, {{ items[1].price }}원, {{ items[1].description }}</span>
+      </a>
+      <img src="{{ url_for('static', filename='media/슈퍼포우생유산균.jpg') }}" alt="" class="recommend-image" width="100" height="100">
+      <div class="recommend-descbox">
+        <p class="recommend-title">{{items[1].item_name}}</p>
+        <p class="recommend-price">{{items[1].price}}원</p>
+        <p class="recommend-description">{{items[1].description}}</p>
+      </div>
+    </div>
+  </li>
+  <li class="recommend-item">
+    <div class="recommend-item-container">
+      <a href="#" class="recommend-link">
+        <span class="sr-only">{{ items[2].title }}, {{ items[2].price }}원, {{ items[2].description }}</span>
+      </a>
+      <img src="{{ url_for('static', filename='media/뉴트리벳영양제.jpg') }}" alt="" class="recommend-image" width="100" height="100">
+      <div class="recommend-descbox">
+        <p class="recommend-title">{{items[2].item_name}}</p>
+        <p class="recommend-price">{{items[2].price}}원</p>
+        <p class="recommend-description">{{items[2].description}}</p>
+      </div>
+    </div>
+  </li>
+  <li class="recommend-item">
+    <div class="recommend-item-container">
+      <a href="#" class="recommend-link">
+        <span class="sr-only">{{ items[3].title }}, {{ items[3].price }}원, {{ items[3].description }}</span>
+      </a>
+      <img src="{{ url_for('static', filename='media/닥터레이오메가.jpg') }}" alt="" class="recommend-image" width="100" height="100">
+      <div class="recommend-descbox">
+        <p class="recommend-title">{{items[3].item_name}}</p>
+        <p class="recommend-price">{{items[3].price}}원</p>
+        <p class="recommend-description">{{items[3].description}}</p>
+      </div>
+    </div>
+  </li>
+</ul>

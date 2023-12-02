@@ -1,0 +1,13 @@
+flask
+flask_bcrypt
+flask_wtf
+sqlalchemy
+flask_sock
+requests
+flask-migrate
+flask-mail
+flask-login
+oauthlib
+pyOpenSSL
+flask_cors
+openai

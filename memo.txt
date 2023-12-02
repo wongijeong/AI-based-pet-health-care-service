@@ -1,0 +1,9 @@
+    <!--<ul class = "nav navbar-nav navbar-right">
+     10         {% if current_user.is_authenticated %}
+     11         <li><a href = "{{ url_for('logout') }}"> 로그아웃</a></li>
+     12         {% else %}
+     13         <li><a href = "{{ url_for('login') }}"> 로그인</a></li>
+     14         {% endif %}
+     15     </ul>
+     16     -->
+
